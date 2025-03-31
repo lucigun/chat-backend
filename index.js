@@ -14,6 +14,6 @@ const io = new Server(httpServer, {
 
 require("./utils/io")(io);
 
-httpSever.listen(process.env.PORT, () => {
+httpServer.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
