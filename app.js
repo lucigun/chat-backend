@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const app = express();
 require("dotenv").config();
+
+const app = express();
 
 // Check for required environment variable
 if (!process.env.DB) {
@@ -22,5 +23,7 @@ mongoose
   .catch((error) => {
     console.error("Database connection error:", error);
   });
+
+app.get('/', (req, res) => { res.send('hello open'); });
 
 module.exports = app;

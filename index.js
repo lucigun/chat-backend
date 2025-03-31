@@ -2,7 +2,7 @@ const { createServer } = require("http");
 const app = require("./app");
 const { Server } = require("socket.io");
 require("dotenv").config();
-
+require("./Monitoring/tracing"); // 모니터링 설정 파일
 
 const httpServer = createServer(app);
 
