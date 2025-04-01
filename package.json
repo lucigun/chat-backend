@@ -17,6 +17,7 @@
     "@opentelemetry/instrumentation-http": "^0.48.0",
     "@opentelemetry/sdk-trace-base": "^1.22.0",
     "@opentelemetry/sdk-trace-node": "^1.22.0",
+    "backend": "file:",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
